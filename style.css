@@ -1,0 +1,527 @@
+* {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+ #img_title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+     border-radius: 60%; 
+  } 
+
+  #img_photo1, #img_photo2, #img_photo3{
+    width: 100%;
+    height: auto;
+    border-radius: 0%;
+  }
+
+  .row{
+    text-align: left;
+  }
+
+
+  #mytext p {
+    font-size: 17px;
+    padding-top: 10px;
+    color: #8f8d8d;
+    text-align: left
+  }
+
+    li{
+        list-style:none;
+    }
+
+    base{
+        position: relative;
+    }
+
+    header{
+        position: relative;
+        z-index: 40;
+        overflow: hidden;/*Hide shadows except below*/
+        
+    }
+
+  a:hover {
+    background-color: rgba(162, 252, 191, 0.518);
+    opacity: 0.5;
+    border-radius: 20px;
+    }
+
+  nav{
+    width: 100%;
+    padding: auto;
+    background-color:rgba(85, 146, 208, 0.303) ;
+    /*box-shadow: 0 0 8px gray;*/
+    border-bottom: 3px solid #3b6225e1;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.5)
+
+  }
+  .navbar-brand{
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+}
+
+form:hover .dropdown{
+  display: block;
+}
+
+
+.dropdown{
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 40px;
+  width: 100%;
+  background-color: #ffff;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+
+.dropdown a:hover{
+    background-color: #ffffff00;
+    color: #ed9f1a;
+    border-radius: 0%;
+    width:100%;
+    }
+
+#mylist li{
+  padding: 5px 0px;
+	cursor: pointer;
+	background-color: #ffff;
+	height: 35px;
+  width: 150px;
+	color: #666;
+  padding-left: 20px;
+}
+
+#mylist a{
+    text-decoration: none;
+
+}
+
+  .leftdesign{
+    position: absolute;
+    z-index: 10;
+    float: left;
+    width: 40%;
+    height:400px;
+    padding: 0px;
+    background-color: #fbe9bc;
+    opacity: 0.5;
+    
+  }
+
+  .rightdesign{
+    position: absolute;
+    z-index: 30;
+    float: right;
+    width: 60%;
+    height: 20%;
+    padding-left: 100px;
+    opacity: 0.6;
+  }
+
+  .font_bolder {
+    font-weight: bolder;
+    color: slategrey;
+    }
+
+  .btn-custom {
+    display: inline-flex;          /* Makes the buttons inline and flexible */
+    justify-content: center;       /* Centers the image inside the button */
+    align-items: center;           /* Vertically centers the image */
+    width: 100px;                  /* Set fixed width for both buttons */
+    height: 100px;                 /* Set fixed height for both buttons */
+    padding: 0;                    /* Remove default padding */
+    margin-right: 10px;            /* Optional: Add some space between the buttons */
+    border-radius: 5px;            /* Optional: Add rounded corners */
+    background-color: #f0f0f0;     /* Optional: Set button background color */
+  }
+  
+  .btn-custom img {
+    max-width: 70%;                /* Ensure the image doesn't overflow the button */
+    max-height: 70%;               /* Keep the image responsive inside the button */
+  }
+  
+   /*   my name animation start */
+.myname {
+    position: relative;
+    z-index: 20;
+    padding-top: 80px;
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px #ababab;
+    color: rgba(161, 98, 31, 0.973);
+    text-align: center; /* Center text */
+    white-space: nowrap; /* Prevent wrapping on larger screens */
+}
+
+.myname span {
+    display: inline-block;
+    transform: translateY(-100%);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+
+.myname.-visible span {
+    transform: translateY(0); /* Bring text down */
+}
+
+/* Add animation delays for each letter */
+.myname span:nth-child(2) { transition-delay: 0.06s; }
+.myname span:nth-child(3) { transition-delay: 0.12s; }
+.myname span:nth-child(4) { transition-delay: 0.18s; }
+.myname span:nth-child(5) { transition-delay: 0.24s; }
+.myname span:nth-child(6) { transition-delay: 0.30s; }
+.myname span:nth-child(7) { transition-delay: 0.36s; }
+.myname span:nth-child(8) { transition-delay: 0.42s; }
+.myname span:nth-child(9) { transition-delay: 0.48s; }
+.myname span:nth-child(10) { transition-delay: 0.54s; }
+.myname span:nth-child(11) { transition-delay: 0.60s; }
+
+
+/* Media query to break into two lines on smaller screens */
+@media (max-width: 576px) {
+  .myname {
+      white-space: normal; /* Allow wrapping */
+  }
+
+  /* Add a line break before and after the space character */
+  .myname .space {
+      display: block;
+      width: 100%; /* Make sure the space takes up the full width */
+      height: 20px; /* Optional: add some spacing between the lines */
+  }
+}
+
+/* my name animation end */
+
+  .photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    position: relative;
+    z-index: 20;
+  }
+
+  .contents{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+   /* height: 100px;*/
+  }
+  .contents1,.contents2{
+    position: relative;
+    z-index: 30;
+  }
+
+  .contact{
+    font-weight: bolder;
+  }
+
+
+ #back_to_top{
+ padding: 5px;
+  flex: 50%;
+  float: right;
+ }
+
+ #copyright{
+  padding: 5px;
+  flex: 50%;
+  float: left;
+
+ }
+
+ #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */ 
+}
+
+#contact h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+
+ .responsive-iframe {
+  width:100%;
+  height:100%;
+ }
+
+  #pool_contents2{
+    background-image: url('images/art_background_2.png');
+
+    background-position: center top;
+  }
+
+    /*Extra small devices phone*/
+  
+  @media only screen and (max-width: 600px){
+    footer{
+      height: 220px;
+    }
+
+    #footer_div{
+      text-align: center;
+    }
+    #back_to_top,#copyright{
+      flex: 100%;
+      float: none;
+    }
+
+    #contact{
+      padding: 10px;
+    }
+    #contact_leftdesign{
+      height: 700px;
+    }
+
+    .contents2{
+     margin: 0 ;
+  }
+
+    .contents1{
+     text-shadow: 1px 5px 5px #fff;
+     margin-bottom: 30px;
+   }
+}
+
+  @media only screen and (min-width: 601px){
+    footer{
+      height: 180px;
+    }
+
+    .contents2{
+      margin: 0 50px ;
+   }
+
+    .contents1{
+      text-shadow: 1px 5px 5px #fff;
+      margin-bottom: 120px;
+   }
+
+    }
+
+  @media only screen and (min-width: 1200px){
+    footer {
+      width: 100% ;
+      height: 200px;
+      text-align: center;
+      padding: 20px; 
+      background-color:#ffff;
+      bottom: 0;
+  
+      #back_to_top{
+        float:right;
+      }
+
+     } 
+
+     .contents2{
+      margin: 0 50px ;
+   }
+    .contents1{
+      text-shadow: 1px 5px 5px #fff;
+      margin-bottom: 120px;
+     }
+    }  
+
+    /*------------------- for Works------------------------------ */
+    .inline-features {
+      display: inline;
+      color: slategrey;
+      margin-right: 10px;
+    }
+
+    p {
+      color: slategrey;
+      font-size: 15px;
+    }
+    
+    p.left {
+      text-align: left; 
+    }
+    
+    p.index{
+      text-align: left;
+      margin-left:auto;
+      margin-right:auto;
+      max-width: 500px; /*width -> max-width*/
+    }
+    
+    ul{
+       list-style: none;
+    }
+    
+    ul li.add_line{
+      
+      border-bottom:1px solid #0e78b9
+    }
+    
+    ul li.chattapp {
+      /*text-align: left;*/ 
+      font-size: 18px;
+      padding-left: 20px;
+      line-height: 3.5em;
+      background: url(images/chattapp4.png)left 0px top 3px no-repeat;
+      background-size: 128px auto;
+    }
+    
+    ul li.analys {
+      /*text-align: left;*/ 
+      font-size: 18px;
+      padding-left: 20px;
+      line-height: 3.5em;
+      background: url(images/analys1.png)left 0px top 3px no-repeat;
+      background-size: 128px auto;
+    }
+    
+    ul li.quiz {
+      /*text-align: left;*/ 
+      font-size: 18px;
+      padding-left: 20px;
+      line-height: 3.5em;
+      background: url(images/quiz1-1.png)left 0px top 3px no-repeat;
+      background-size: 128px auto;
+    }
+    
+    ul li.bibliotek {
+      /*text-align: left;*/ 
+      font-size: 18px;
+      padding-left: 20px;
+      line-height: 3.5em;
+      background: url(images/bibliotek1.png)left 0px top 3px no-repeat;
+      background-size: 100px auto;
+    }
+    
+    ul li.webshop {
+      /*text-align: left;*/
+      font-size: 18px;
+      padding-left: 20px;
+      line-height: 3.5em;
+      background: url(images/webshop2.png)left 0px top 3px no-repeat;
+      background-size: 100px auto;
+    }
+    
+    ul li.aka {
+      /*text-align: left;*/
+      font-size: 18px;
+      padding-left: 20px;
+      line-height: 3.5em;
+      background: url(images/aka1-2.png)left 0px top 3px no-repeat;
+      background-size: 100px auto;
+    }
+    .video {
+      display: inline-block;
+      width: 100%; /* Let the width scale responsively */
+      height: auto; /* Automatically adjust height to maintain aspect ratio */
+      max-width: 640px; /* Set a max width for larger screens if desired */
+      margin-top: 15px;
+    }
+  
+    .thumbnail{
+      display: inline-block;/*Det är viktig*/
+      height: 80px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+    .thumbnail img{
+      height: 100%;
+    }
+    
+    h1 {
+      color: #0e6aa3;
+      font-size: 25px;
+    }
+    
+    /*
+    div {
+      background: #ffffff;
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #cccccc;
+      margin: 0 auto;
+    }
+    */
+    
+    
+  /*   .content_portfolio{
+    background: #ffffff;
+    max-height: 2500px;
+    max-width: 800px; 
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 0 auto;
+    } */
+    .content_other{
+    background: #ffffff;
+    max-height: 600px;/*Det saknas i början och det var inte RWD */
+    max-width: 800px; /*width -> max-width*/
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 0 auto;
+    }
+    
+
+    
+    
+    .btn-square {
+      position: relative;
+      display: inline-block;
+      padding: 0.3em 0.5em;
+      text-decoration: none;
+      color: cornsilk;
+      background: #fc891d;
+      border-bottom: solid 2px #bb7a19;
+      border-radius: 4px;
+      box-shadow: inset 0 2px 0 rgb(245, 239, 239),0 2px 2px #c4baba;
+      font-weight: bold;
+    }
+    
+   /*  .wrapper{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 110px;
+    box-sizing: border-box;
+    } */
+    
+    /*
+    .contents {
+    width: 960px;
+    background-color: #eee;
+    margin: 70px auto 0;
+    }
+    .clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+    }
+    footer {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    text-align: center;
+    position:fixed ; 
+    bottom: 0;
+    }
+    */
+    
+ 
+
+  
+
+
+
+
