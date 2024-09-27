@@ -422,10 +422,16 @@ form:hover .dropdown{
     }
     .video {
       display: inline-block;
-      width: 100%; /* Let the width scale responsively */
-      height: auto; /* Automatically adjust height to maintain aspect ratio */
-      max-width: 640px; /* Set a max width for larger screens if desired */
+      width: 100%; 
+      height: auto; 
+      max-width: 640px;
       margin-top: 15px;
+    }
+
+    .buttons{
+      display: inline-block;/*Det är viktig*/
+      margin-right: 15px;
+      margin-bottom: 15px;
     }
   
     .thumbnail{
@@ -480,15 +486,24 @@ form:hover .dropdown{
     .btn-square {
       position: relative;
       display: inline-block;
-      padding: 0.3em 0.5em;
+      padding: 0.3em 2em;
       text-decoration: none;
       color: cornsilk;
-      background: #fc891d;
-      border-bottom: solid 2px #bb7a19;
       border-radius: 4px;
       box-shadow: inset 0 2px 0 rgb(245, 239, 239),0 2px 2px #c4baba;
       font-weight: bold;
     }
+
+    .btn-orange {
+      background: #e7be07;
+      border-bottom: solid 2px #bb7a19; 
+    }
+
+    .btn-green{
+      background: #5ad48f;
+      border-bottom: solid 2px #0d6d18; 
+    }
+    
     
    /*  .wrapper{
     min-height: 100vh;
