@@ -3,9 +3,9 @@
 
 ## Deacription
 
-Min webbsida består av 3 HTML filer (index, kontakt och pool), en script fil, en css fil.
+Min webbsida består av index.js, en css fil.
 ***
-Jag har skapat github sidan också.[https://miwgu.github.io/Klient_PersonligWebbsida/]
+Jag har deployat github sidan till Netlify
 
 
 
