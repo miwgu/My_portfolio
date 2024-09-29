@@ -6,12 +6,3 @@ setTimeout(() => {
     target.classList.add(CLASSNAME); // Add the class to trigger the animation
   }, 100);//Delay of 0.1 seconds before starting the animation (optional)
 
-/* setInterval(() => {
-  target.classList.add(CLASSNAME);
-  
-  setTimeout(() => {
-    target.classList.remove(CLASSNAME);
-  }, TIMEOUT); 
-  
-}, TIMEOUT * 2);  */
-

@@ -23,7 +23,7 @@
         <header >
         <nav class="navbar navbar-expand-lg fixed-top">
           <div class="container-fluid" >
-                <a class="navbar-brand"  href="index.html">My portfolio</a>
+                <a class="navbar-brand nav-text"  href="index.html">My portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,9 +31,9 @@
              <div class="collapse navbar-collapse" id="navbarNav">  
             
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#works">WORKS</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#contact">CONTAKT</a></li>
+                    <li class="nav-item"><a class="nav-link active nav-text" aria-current="page" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link active nav-text" aria-current="page" href="#works">WORKS</a></li>
+                    <li class="nav-item"><a class="nav-link active nav-text" aria-current="page" href="#contact">CONTAKT</a></li>
                 </ul>
 
             
@@ -42,6 +42,7 @@
         </nav>
        </header>
   <main>
+    <div class="design-container">
             <div class="leftdesign"></div>
             <!-- <h1 class="myname">Miwa Guhrés</h1> -->
              <h1 class="myname">
@@ -58,9 +59,10 @@
                 <span>s</span>
              </h1> 
 
-        
+          
             <img id="photo" class="photo" style="border-radius: 0%;" src="images/miwa_23_2000x2000.png" alt="my photo">
-            
+          
+    </div>    
         
         <div class="contents">
 
@@ -115,7 +117,7 @@
            <div class="row">
             
               <div class="col-sm-4">
-                <img id="img_photo1" src="images/laptop.jpg" alt="the image for my education">
+                <img id="img_photo1" src="images/knowledge.jpg" alt="the image for my education">
               </div>
             
               <div class="col-sm-8" style="padding-top:20px ;">
@@ -125,7 +127,7 @@
                   HTML, CSS, JavaScript, React.js, Angular.js, Bootstrap, MUI, Tailwind CSS</p>
                 <p style="text-align: left"><span class="font_bolder">Backend:</span>
                   Java, Spring Boot, Node.js, Express.js, MySQL, PostgreSQL</p>
-                <p style="text-align: left"><span class="font_bolder">  API och methdologier:</span>
+                <p style="text-align: left"><span class="font_bolder">  API och metodik:</span>
                   REST API, MVC (Model-View-Controller)</p>
                 <p style="text-align: left"><span class="font_bolder">  Säkerhet:</span>
                   Grundläggande kunskaper i webbsäkerhetsprinciper (XSS, CSRF, JWT)</p>
@@ -141,7 +143,7 @@
               <div class="col-sm-8" style="padding-top:20px ;">
                 <h3 >Mina Utbuildningar</h3>
                 
-                <p style="text-align: left">Jag studerade javaprogrammering vid Nackademin och har även masterexamen i hälsoinformatik vid Karolinska Institutet och Stockholms universitet. Jag har kandidatexamen i psykologi från Japan.</p> 
+                <p style="text-align: left">Jag studerar till frontend-utvecklare med inriktning mot webbsäkerhet vid Jensen. Jag studerade javaprogrammering vid Nackademin och har även masterexamen i hälsoinformatik vid Karolinska Institutet och Stockholms universitet. Jag har kandidatexamen i psykologi från Japan.</p> 
                 
               </div>
 
@@ -153,7 +155,7 @@
 
             <div class="row">
               <div class="col-sm-4">
-                <img id="img_photo3" src="images/colorful.jpg" alt="the image for my hobby">
+                <img id="img_photo3" src="images/3childrens.png" alt="the image for my hobby">
               </div>
 
               <div class="col-sm-8" style="padding-top:20px ;">
@@ -173,12 +175,14 @@
       <!-----------------------------works start------------------------------------------->
       <div class="spacer2"></div>  
       <div class="container text-center" id="mytext" style="padding-top:20px ;">
-          <div class="rightdesign">
-            <picture>
-                <source class="photo" media="(min-width: 800px)" srcset="images/dandelion.jpg">
-                <img id="img_title" class="photo" src="/images/heart.png" alt="my photo">
-            </picture>
-            </div>
+<!--           <div class="rightdesign">
+          <div class="anim-box fadeup photo-container">
+              <picture>
+                  <source class="photo" media="(min-width: 800px)" srcset="images/dandelion.jpg">
+                  <img id="img_title" class="photo" src="/images/heart.png" alt="my photo">
+              </picture>
+          </div>
+          </div> -->
 
 
             <div class="contents">
@@ -211,7 +215,7 @@
                 <li>
                   <p style="text-align: left">
                     <br>
-                    <span class="font_bolder">Individuellt projekt:</span>
+                    <span class="font_bolder">Frontend projekt:</span>
                     <span>
                     Jag utvecklade frontend för en chattapplikation. Backend (API) var förberett av skolan.
                     Applikationen låter användare bjuda in en vän till en chatt och starta en konversation. Även om flera vänner kan bjudas in, är själva chatten utformad som en en-till-en-konversation.
@@ -234,13 +238,13 @@
                 </li>
                 
                 <li><br></li>
-                <li>
+<!--                 <li>
                 <a class="thumbnail" href="images/chattapp1.png" target="_blank"><img src="images/chattapp1.png" alt="" border="1"></a>  
                 <a class="thumbnail" href="images/chattapp2.png" target="_blank"><img src="images/chattapp2.png" alt="" border="1"></a> 
                 <a class="thumbnail" href="images/chattapp3.png" target="_blank"><img src="images/chattapp3.png" alt="" border="1"></a> 
                 <br>
                 <br>
-                </li>
+                </li> -->
 
               <li class="spacer1"></li>
                 <li class="fashion add_line">
@@ -264,7 +268,7 @@
                 <li>
                   <p style="text-align: left">
                     <br>
-                    <span class="font_bolder">Individuellt projekt:</span>
+                    <span class="font_bolder">Fullstack projekt:</span>
                     <span>
                     Jag utvecklade både frontend och backend (API) för applikationen.
                     Det är en e-handelsapplikation för dammode. Användare kan se en lista över produkter utan att behöva logga in, 
@@ -287,14 +291,14 @@
                 </li>
 
                 <li><br></li>
-                <li>
+<!--                 <li>
                 <a class="thumbnail" href="images/fashionhub2.png" target="_blank"><img src="images/fashionhub2.png" alt="" border="1"></a>  
                 <a class="thumbnail" href="images/fashionhub3.png" target="_blank"><img src="images/fashionhub3.png" alt="" border="1"></a> 
                 <a class="thumbnail" href="images/fashionhub4.png" target="_blank"><img src="images/fashionhub4.png" alt="" border="1"></a> 
                 <a class="thumbnail" href="images/fashionhub5.png" target="_blank"><img src="images/fashionhub5.png" alt="" border="1"></a> 
                 <br>
                 <br>
-                </li>
+                </li> -->
               
 
                 <li class="spacer1"></li>
@@ -304,11 +308,12 @@
                 <li>
                   <p style="text-align: left">
                     <br>
-                    <span class="font_bolder">Individualarbete:</span>
+                    <span class="font_bolder">Fullstack projekt:</span>
                     <span>
                     Jag utvecklade både front-end och back-end.
                     Analytiker kan analysera olika typ hälsoundersökningar.
-                    Det finns möjlighet att korstabulera frågorna.
+                    Det finns möjlighet att korstabulera frågorna. 
+                    Fokus i aplikationen är hur man struktuera SQL kod.
                     </span>
                     <p style="text-align: left; word-break: break-word;">
                     (Java,PostgreSQL,React.js,PivotTable.js)
@@ -318,8 +323,8 @@
                 </li>
                 <li><br></li>
                 <li>
-                <a class="thumbnail" href="images/analys2.png" target="_blank"><img src="images/analys2.png" alt="" border="1"></a>  
-                <a class="thumbnail" href="images/analys3.png" target="_blank"><img src="images/analys3.png" alt="" border="1"></a> 
+                <!-- <a class="thumbnail" href="images/analys2.png" target="_blank"><img src="images/analys2.png" alt="" border="1"></a>  
+                <a class="thumbnail" href="images/analys3.png" target="_blank"><img src="images/analys3.png" alt="" border="1"></a> --> 
                 <a class="thumbnail" href="images/analys4.png" target="_blank"><img src="images/analys4.png" alt="" border="1"></a> 
                 <br>
                 <br>
@@ -336,9 +341,9 @@
                     <span>
                     Jag utvecklade quiz till mina barn.
                     Man kan svara på frågorna genom att klicka alternativsvar.
-                    När man väljer ett svar visar meddelandet att det är rätt eller fel.
-                    Sista sidan visar att hur många poäng man har fått.
-                    Mina barn kan lära sig japanska och matte med de frågorna.
+                    När man väljer ett svar visas ett meddelande att det är rätt eller fel.
+                    Sista sidan visar hur många poäng man har fått.
+                    Mina barn kan lära sig japanska och matte med applikationen.
                    </span>
                    <p style="text-align: left; word-break: break-word;">
                     (JavaScript,HTML,CSS,Bootstrap)
@@ -347,10 +352,10 @@
                 </li>
                 <li><br></li>
                 <li>
-                <a class="thumbnail" href="images/quiz1.png" target="_blank"><img src="images/quiz1.png" alt="" border="1"></a>  
-                <a class="thumbnail" href="images/quiz2.png" target="_blank"><img src="images/quiz2.png" alt="" border="1"></a>  
+                <!-- <a class="thumbnail" href="images/quiz1.png" target="_blank"><img src="images/quiz1.png" alt="" border="1"></a>  
+                <a class="thumbnail" href="images/quiz2.png" target="_blank"><img src="images/quiz2.png" alt="" border="1"></a>   -->
                 <a class="thumbnail" href="images/quiz3.png" target="_blank"><img src="images/quiz3.png" alt="" border="1"></a>
-                <a class="thumbnail" href="images/quiz4.png" target="_blank"><img src="images/quiz4.png" alt="" border="1"></a>
+                <!-- <a class="thumbnail" href="images/quiz4.png" target="_blank"><img src="images/quiz4.png" alt="" border="1"></a> -->
                 <br>
                 <br>
                 </li>
@@ -376,12 +381,12 @@
                   </p>
                 </li>
                 <li><br></li>
-                <li>
+<!--                 <li>
                 <a class="thumbnail" href="images/bibliotek1.png" target="_blank"><img src="images/bibliotek1.png" alt=""></a>  
                 <a class="thumbnail" href="images/bibliotek2.png" target="_blank"><img src="images/bibliotek2.png" alt=""></a>  
                 <br>
                 <br>
-                </li>
+                </li> -->
       
                 <li class="spacer1"></li>
                 <li class="webshop add_line">
@@ -404,7 +409,7 @@
                   </p>
                 </li>
                 <li><br></li>
-                <li>
+                <!-- <li>
                   <a class="thumbnail" href="images/webshop1.png" target="_blank"><img src="images/webshop1.png" alt=""></a>  
                   <a class="thumbnail" href="images/webshop2.png" target="_blank"><img src="images/webshop2.png" alt=""></a>  
                   <a class="thumbnail" href="images/webshop3.png" target="_blank"><img src="images/webshop3.png" alt=""></a>  
@@ -412,10 +417,10 @@
                   <a class="thumbnail" href="images/webshop5.png" target="_blank"><img src="images/webshop5.png" alt=""></a>
                   <br>
                   <br>
-                </li>
+                </li> -->
       
                 <li class="spacer1"></li>
-                <li class="aka add_line">
+<!--                 <li class="aka add_line">
                     Mina illustration
                   </li>
                   <li>
@@ -439,7 +444,7 @@
                   <a class="thumbnail" href="images/aka33.png" target="_blank"><img src="images/aka33.png" alt=""></a>  
                   <br>
                   <br>
-                  </li>
+                  </li> -->
               </ul>
       
         </div>
@@ -457,12 +462,12 @@
       <!--contact-->
       <div class="contents ">
         <div class="container text-center" id="mytext" style="padding-top:20px ;">
-        <div class="rightdesign">
+<!--         <div class="rightdesign">
           <picture>
               <source class="photo" media="(min-width: 800px)" srcset="images/leaf.jpg">
               <img id="img_title" class="photo" src="/images/heart.png" alt="my photo">
           </picture>
-          </div>
+          </div> -->
 
       
           
@@ -478,7 +483,7 @@
               <div class="row">
                 <div class="col-md-12 text-center">
     
-                      <h2><a href="mailto:miwa.guhres@hotmail.com">miwa.guhres@hotmail.com</a></h2>
+                      <div><a class="email-text" href="mailto:miwa.guhres@hotmail.com">miwa.guhres@hotmail.com</a></div>
 
                 </div>
               </div>
