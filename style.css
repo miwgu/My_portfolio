@@ -375,8 +375,10 @@ form:hover .dropdown{
     }
     
     ul li.add_line{
-      
-      border-bottom:1px solid #0e78b9
+      color: rgba(161, 98, 31, 0.973);
+      text-shadow: 3px 3px 3px #ababab;
+      text-align: center;
+      border-bottom:1px solid #047654
     }
     
     ul li.chatapp {
