@@ -2,6 +2,17 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+.spacer0 {
+  height: 10px;
+}
+
+.spacer1 {
+  height: 50px; 
+}
+
+.spacer2 {
+  height: 100px; 
+}
 
  #img_title {
     display: block;
@@ -336,6 +347,7 @@ form:hover .dropdown{
     }  
 
     /*------------------- for Works------------------------------ */
+
     .inline-features {
       display: inline;
       color: slategrey;
@@ -367,12 +379,21 @@ form:hover .dropdown{
       border-bottom:1px solid #0e78b9
     }
     
-    ul li.chattapp {
+    ul li.chatapp {
       /*text-align: left;*/ 
       font-size: 18px;
       padding-left: 20px;
       line-height: 3.5em;
       background: url(images/chattapp4.png)left 0px top 3px no-repeat;
+      background-size: 128px auto;
+    }
+
+    ul li.fashion {
+      /*text-align: left;*/ 
+      font-size: 18px;
+      padding-left: 20px;
+      line-height: 3.5em;
+      background: url(images/fashionhub1.png)left 0px top 3px no-repeat;
       background-size: 128px auto;
     }
     
@@ -419,6 +440,21 @@ form:hover .dropdown{
       line-height: 3.5em;
       background: url(images/aka1-2.png)left 0px top 3px no-repeat;
       background-size: 100px auto;
+    }
+
+    @media (max-width: 767px) {
+      ul li.chatapp,
+      ul li.fashion,
+      ul li.analys,
+      ul li.quiz,
+      ul li.bibliotek,
+      ul li.webshop,
+      ul li.aka
+       {
+        background: none; /* Remove the background image */
+        border-bottom: 1px solid purple; /* Add a line instead */
+        padding-left: 0; /* Adjust padding if necessary */
+      }
     }
     .video {
       display: inline-block;
