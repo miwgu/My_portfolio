@@ -466,8 +466,17 @@ form:hover .dropdown{
     ul{
        list-style: none;
     }
-    
-    ul li.add_line{
+
+    ul.with-dots {
+    list-style: disc !important;   /* indicate dots */
+    list-style-position: inside;
+    padding-left: 1em;  
+    margin-left: 1.5em; /* indent the list */
+    color: slategray;
+    margin-right: 10px; 
+  }
+   
+   ul li.add_line{
       color: rgba(161, 98, 31, 0.973);
       text-shadow: 3px 3px 3px #ababab;
       text-align: center;
