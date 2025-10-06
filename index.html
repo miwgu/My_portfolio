@@ -534,7 +534,7 @@
                 <li>
                   <a class="thumbnail" href="images/school.png" target="_blank"><img src="images/school.png" alt="" border="1"></a>  
                   <br>
-                  </li> 
+                </li> 
                   
                   <li>
                     <a class="btn-square btn-green buttons" href="https://www.stockholmjapanskaskolan.se/" target="_blank" >
@@ -569,6 +569,10 @@
                 </li>
                 <li><br></li>
                 <li>
+                  <a class="thumbnail" href="images/rpg_java.png" target="_blank"><img src="images/rpg_java.png" alt="" border="1"></a>  
+                  <br>
+                </li> 
+                <li>
                     <a class="btn-square btn-orange buttons" href="https://github.com/miwgu/RPG_ConsoleApp" target="_blank" >
                     GitHub
                   </a> 
@@ -591,7 +595,10 @@
                     <li><strong>Inkapsling:</strong></li>
                     <li>Hjältars attribut och utrustning hanteras via publika metoder som Equip, LevelUp och Display.</li>
                     <li><strong>Polymorfism:</strong></li>
-                    <li>Beräkning av skada och attribut sker olika beroende på hjälteklass, men anropas via samma gränssnitt.</li>
+                    <li>Beräkning av skada och attribut sker olika beroende på Hero-klass (t.ex. Mage, Rogue), 
+                        men anropas via den abstrakta metoden getDamagingAttribute() i den abstrakta Hero-klassen. 
+                        På så sätt kan samma metodanrop, damage(), ge olika resultat beroende på Hero-klass.
+                    </li>
                     <li><strong>Undantagshantering:</strong></li>
                     <li>Anpassade undantag (InvalidWeaponException, InvalidArmorException) säkerställer att ogiltig utrustning inte kan användas.</li>
                     <li><strong>Modularitet & testbarhet:</strong></li>
@@ -602,8 +609,8 @@
                 <div style="text-align: left" >
                 <span class="font_bolder">Beräkningslogik:</span>
                  <ul class="with-dots">
-                   <li>●Totala attribut = grundvärden från nivåökning + bonus från rustning</li>
-                   <li>●Skada = vapenskada × (1 + huvudattribut/100)</li>
+                   <li>●Totala attribut = grundvärden från nivå (beroende på hjälteklass) + bonus från rustning (Armor)</li>
+                   <li>●Skada = vapenskada × (1 + huvudattribut/100), där huvudattribut bestäms av hjälteklass (Strength, Dexterity, eller Intelligence)</li>
                   </ul>
                  </div>
 
