@@ -650,10 +650,18 @@
                     <span class="font_bolder">Fullstack projekt:</span>
                     <span>
                     Jag utvecklade både front-end och back-end.
-                    Analytiker kan analysera olika typ hälsoundersökningar.
-                    Det finns möjlighet att korstabulera frågorna. 
-                    Fokus i aplikationen är hur man struktuera SQL kod.
-                    </span>
+                    Systemet gör det möjligt för analytiker att analysera olika typer av hälsoundersökningsdata 
+                    och har en funktion för kors-tabellering av frågevariabler.
+                    I denna applikation användes PivotTable.js för att kunna sammanställa och visualisera undersökningsdata dynamiskt.
+                    Därför strukturerades API-svaret i ett JSON-format med en array av objekt, på samma sätt som i PivotTable.js-exemplet (t.ex. mps.json). 
+                    På backend-sidan använde jag PostgreSQL och Java (Spring Boot),
+                    med fokus på strukturerad SQL-kod och effektiv databehandlingsdesign.
+                    Specifikt definierades en subfråga för varje fråge-ID (question_id), och dessa slogs samman med hjälp av patient-ID (patient_id).
+                    På så sätt skapades en intermediär tabell i SQL, där varje rad motsvarar en patient och varje kolumn representerar svaret på en specifik fråga.
+                    Denna tabell formaterades sedan till JSON-format (t.ex. samma struktur som mps.json) som det slutliga resultatet.
+                    Detta gör det möjligt att returnera data från API:t i ett format som direkt kan användas av analysverktyg som PivotTable.js,
+                    vilket eliminerar behovet av komplex datakonvertering på front-end-sidan.
+                  </span>
                     <p style="text-align: left; word-break: break-word;">
                     (Java,PostgreSQL,React.js,PivotTable.js)
                     </p>
