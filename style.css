@@ -482,7 +482,9 @@ form:hover .dropdown{
       text-align: center;
       border-bottom:1px solid #047654
     }
-    
+    ul li.dashboard,
+    ul li.api,
+    ul li.aichat,
     ul li.chatapp,
     ul li.fashion,
     ul li.school,
@@ -502,6 +504,9 @@ form:hover .dropdown{
 
 
     @media (max-width: 767px) {
+      ul li.dashboard,
+      ul li.api,
+      ul li.aichat,
       ul li.chatapp,
       ul li.fashion,
       ul li.school,
